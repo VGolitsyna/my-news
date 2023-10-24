@@ -1,0 +1,16 @@
+@import '../../scss/mixins.scss';
+
+.general-section__world{
+    padding: 6% 24px 0 24px;
+    border-right: 1px solid $color-decoration;
+
+    :first-child{
+        border-top: none;
+        padding-top: 0;
+    }
+
+    :last-child{
+        padding-bottom: 0 ;
+    }
+}
+

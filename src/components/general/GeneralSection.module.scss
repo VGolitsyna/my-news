@@ -1,0 +1,76 @@
+
+@import '../../scss/mixins.scss';
+
+.general-section {
+    padding: 0 24px;
+    border-right: 1px solid $color-decoration;
+
+    :first-child{
+        img{
+            width: 220px;
+            height: 220px;
+        }
+
+        border-top: none;
+        padding-top: 0;
+    }
+
+
+    :last-child{
+        padding-bottom: 0 ;
+    }
+
+    p{
+        max-height: 70px;
+        overflow: hidden;;
+    }
+}
+
+.general-page{
+    :last-child{
+        padding-bottom: 0 ;
+    }
+
+    :first-child{
+        border-top: none;
+    }
+
+    img {
+        overflow: hidden;
+        width: 300px !important;
+        height: 150px !important;
+    }
+
+    h3{
+        margin-bottom: 1% !important;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .general-page{
+        img {
+            overflow: hidden;
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        h3{
+            max-width: 600px !important;
+        }
+
+        p{
+            max-width: 600px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .general-section {
+        :first-child{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}

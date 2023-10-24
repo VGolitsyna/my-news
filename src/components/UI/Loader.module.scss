@@ -1,0 +1,16 @@
+
+@import '../../scss/mixins.scss';
+
+.loader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader-circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px dashed $color-decoration;
+        border-top: 3px solid $color-decoration;
+    }
+}

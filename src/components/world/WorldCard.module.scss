@@ -1,0 +1,36 @@
+@import '../../scss/mixins.scss';
+
+.world-card__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 24px 0;
+    border-top: 1px dashed $color-decoration;
+
+    .world-card{
+        margin-right: 3%;
+    }
+        .world-card__descrp {
+            @include category-news 
+        }
+
+        h3{
+            @include title-news
+        }
+
+    img{
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 2200px){
+    .world-card__wrapper{
+        padding: 30px 0;
+        img{
+            width: 104px;
+            height: 104px;
+        }
+    }
+}

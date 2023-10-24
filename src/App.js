@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/UI/Layout';
+import General from './pages/General';
+import CategoryPage from './pages/CategoryPage';
+import SearchPage from './pages/SearchPage';
+import { menuItems } from './components/menu/menuList';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const categoryPages = menuItems.map(el => {
+    return <Route 
+    key={el.path} 
+    path={'/:category'} 
+    element={<CategoryPage 
+    category={el.path} />}/>
+  })
+
+  return <>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<General />} />
+        <Route path='/general' element={<Navigate to='/' replace/>} />
+        {categoryPages}
+        <Route path='/search' element={<SearchPage />} />
+      </Route>
+    </Routes>
+  </>
 }
 
 export default App;

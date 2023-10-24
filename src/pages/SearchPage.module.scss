@@ -1,0 +1,15 @@
+@import '../scss/mixins.scss';
+
+h1 {
+    @include title-news;
+    margin-bottom: 2%;
+    font-size: 24px;
+}
+
+.content-container{
+    img {
+        overflow: hidden;
+        width: 300px !important;
+        height: 150px !important;
+    }
+}

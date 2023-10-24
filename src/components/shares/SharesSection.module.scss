@@ -1,0 +1,17 @@
+@import '../../scss/mixins.scss';
+
+.shares{
+    padding: 0 24px;
+        h3{
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            margin-bottom: 6%;
+        }
+
+    :last-child {
+        border: none;
+        padding-bottom: 0 ;
+    }
+}

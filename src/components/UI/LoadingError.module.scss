@@ -1,0 +1,14 @@
+@import '../../scss/mixins.scss';
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+
+    p{
+        @include title-news;
+        margin-bottom: 0;
+    }
+}

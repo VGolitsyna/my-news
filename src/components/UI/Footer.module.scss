@@ -1,0 +1,32 @@
+@import '../../scss/mixins.scss';
+
+.footer-wrapper{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+    border-top: 1px solid $color-decoration;
+    
+    .footer-nav{
+        display: flex;
+        margin-bottom: 3%;
+        ul{
+            display: flex;
+            width: 800px;
+            justify-content: space-between;
+            li{
+                font-family: Libre Franklin;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-description;
+            }
+        }
+    }
+    
+}
+
+.active{
+    color: $color-title;
+}

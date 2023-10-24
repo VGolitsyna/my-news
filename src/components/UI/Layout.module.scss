@@ -1,0 +1,12 @@
+.main-conteiner {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+@media screen and (min-width: 2100px){
+    .main-conteiner {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
