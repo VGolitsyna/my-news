@@ -1,39 +1,44 @@
 $color-title: rgba(0, 0, 0, 0.87);
-$color-description: rgba(0, 0, 0, 0.60);
-$color-decoration: rgba(0, 0, 0, 0.20);
-$color-accent: #6B38FB;
+$color-description: rgba(0, 0, 0, 0.6);
+$color-decoration: rgba(0, 0, 0, 0.2);
+$color-accent: #6b38fb;
+
+$tablet: 800px;
+$l-mobile: 426px;
+$m-mobile: 376px;
+$s-mobile: 321px;
 
 @mixin title-news {
-    color: $color-title;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: 1px;
-    margin-bottom: 2%;
+  color: $color-title;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1px;
+  margin-bottom: 2%;
 }
 
 @mixin category-news {
-    color: $color-title;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 1%;
+  color: $color-title;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1%;
 }
 
-@mixin text-news{
-    color: $color-description;
-    font-family: Merriweather;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1px;
+@mixin text-news {
+  color: $color-description;
+  font-family: Merriweather;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1px;
 }
 
 @mixin buttons {
-    cursor: pointer;
+  cursor: pointer;
 }

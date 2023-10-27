@@ -1,17 +1,45 @@
-@import '../../scss/mixins.scss';
+@import "../../scss/mixins.scss";
 
-.shares{
-    padding: 0 24px;
-        h3{
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.15px;
-            margin-bottom: 6%;
-        }
+.shares {
+  padding: 0 24px;
+  h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    margin-bottom: 6%;
+  }
+}
 
+@media screen and (min-width: $tablet) {
+  .shares {
     :last-child {
-        border: none;
-        padding-bottom: 0 ;
+      border: none;
+      padding-bottom: 0;
     }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .shares {
+    padding: 0;
+    h3 {
+      margin-bottom: 3%;
+    }
+    .shares-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4%;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $s-mobile) {
+  .shares {
+    .shares-cards {
+      flex-direction: column;
+    }
+  }
 }

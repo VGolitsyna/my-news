@@ -1,0 +1,11 @@
+@import "../../scss/mixins.scss";
+
+.slider[hidden] {
+  display: block;
+}
+
+@media screen and (max-width: $tablet) {
+  .slider[hidden] {
+    display: none;
+  }
+}

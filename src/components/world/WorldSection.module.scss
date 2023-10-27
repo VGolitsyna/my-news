@@ -14,3 +14,12 @@
     }
 }
 
+@media screen and (max-width: $tablet){
+    .general-section__world{
+        border-right: none;
+        margin: 24px 0;
+        padding: 0;
+        
+    }
+}
+

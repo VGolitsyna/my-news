@@ -1,34 +1,59 @@
-@import '../../scss/mixins.scss';
+@import "../../scss/mixins.scss";
 
-.menu-wrapper{
-    position: fixed;
-    top: 0;
-    width: 100%;
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+
+  .menu {
+    width: 20%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.70);
-
-    .menu {
-        width: 20%;
-        height: 100%;
-        z-index: 100;
-        background-color: #fff;   
-        .menu-content{  
-            padding-top: 20%;
-            li{
-                padding: 15px 0 15px 60px ;
-                font-family: Libre Franklin;
-                font-size: 16px;
-                font-weight: 600;
-                color: $color-description;
-            } 
-        }
+    z-index: 100;
+    background-color: #fff;
+    .menu-content {
+      padding-top: 20%;
+      li {
+        padding: 15px 0 15px 60px;
+        font-family: Libre Franklin;
+        font-size: 16px;
+        font-weight: 600;
+        color: $color-description;
+      }
     }
+  }
 }
 
-.active{
-    font-size: 18px;
-    color: $color-title;
-    border-top: 2px solid $color-title;
+.active {
+  font-size: 18px;
+  color: $color-title;
+  border-top: 2px solid $color-title;
 }
 
+@media screen and (max-width: $tablet) {
+  .menu-wrapper {
+    margin-top: 50px;
+    .menu {
+      width: 50%;
+      .menu-content {
+        padding-top: 6%;
+      }
+    }
+  }
+}
 
+@media screen and (max-width: $l-mobile) {
+  .menu-wrapper {
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .menu-content {
+        li {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

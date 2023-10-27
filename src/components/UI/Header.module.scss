@@ -1,31 +1,52 @@
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1% 5%;
-    
-    
+@import "../../scss/mixins.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1% 5%;
+  background-color: #fff;
 }
 
-.header-menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 270px;
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+
+  img[hidden] {
+    display: block;
+  }
+  .mini-logo[hidden] {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 2100px){
-    .header{
-        margin-left: 8%;
-        margin-right: 8%;
+@media screen and (min-width: 2100px) {
+  .header {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-menu {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: $l-mobile) {
+  .header {
+    img[hidden] {
+      display: none;
     }
-}
 
-@media screen and (max-width: 1024px){
-    .header-menu{
-        width: 240px;
+    .mini-logo[hidden] {
+      display: block;
     }
+
+    .header-menu {
+      width: 56px;
+    }
+  }
 }
-
-
-

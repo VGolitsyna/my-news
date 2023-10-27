@@ -1,61 +1,80 @@
-@import '../../scss/mixins.scss';
+@import "../../scss/mixins.scss";
 
-.shares-card{
+.shares-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px dashed $color-decoration;
+  padding: 15% 0;
+
+  .shares-card__description {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px dashed $color-decoration;
-    padding: 15% 0;
+    flex-direction: column;
 
-    .shares-card__description{
-        display: flex;
-        flex-direction: column;
-
-        h3{
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: $color-title;
-        }
-
-        p{
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 166.667%;
-            letter-spacing: 0.25px;
-            color: $color-description;
-        }
+    h3 {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: $color-title;
     }
+
+    p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 166.667%;
+      letter-spacing: 0.25px;
+      color: $color-description;
+    }
+  }
 }
 
-.shares-card__negative{
-    font-family: Roboto;
-    font-size: 14px;    
-    font-weight: 500;
-    line-height: 166.667%;
-    letter-spacing: 0.25px;
-    color: $color-title;
+.shares-card__negative {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 166.667%;
+  letter-spacing: 0.25px;
+  color: $color-title;
 }
 
-    .shares-card__positive{
-        font-family: Roboto;
-        font-size: 14px;    
-        font-weight: 500;
-        line-height: 166.667%;
-        letter-spacing: 0.25px;   
-        color: $color-accent;
-    }
+.shares-card__positive {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 166.667%;
+  letter-spacing: 0.25px;
+  color: $color-accent;
+}
 
-    @media screen and (min-width: 2200px){
-        .shares-card{
-            padding: 10% 0;
-        }
-    }
+@media screen and (min-width: 2200px) {
+  .shares-card {
+    padding: 10% 0;
+  }
+}
 
-@media screen and (max-width: 1300px){
-    .shares-card{
-        padding: 30% 0;
-    }
+@media screen and (max-width: 1300px) {
+  .shares-card {
+    padding: 30% 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .shares-card {
+    width: 100px;
+    padding: 3% 0 3% 0;
+  }
+}
+
+@media screen and (max-width: $m-mobile) {
+  .shares-card {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: $s-mobile) {
+  .shares-card {
+    width: 100%;
+  }
 }

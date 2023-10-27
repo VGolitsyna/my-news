@@ -1,15 +1,24 @@
-@import '../scss/mixins.scss';
+@import "../scss/mixins.scss";
 
 h1 {
-    @include title-news;
-    margin-bottom: 2%;
-    font-size: 24px;
+  @include title-news;
+  margin-bottom: 2%;
+  font-size: 24px;
 }
 
-.content-container{
+.content-container {
+  img {
+    overflow: hidden;
+    width: 300px !important;
+    height: 150px !important;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .content-container {
     img {
-        overflow: hidden;
-        width: 300px !important;
-        height: 150px !important;
+      width: 150px !important;
+      height: 100px !important;
     }
+  }
 }

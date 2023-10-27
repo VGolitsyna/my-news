@@ -1,73 +1,66 @@
-@import '../../scss/mixins.scss';
+@import "../../scss/mixins.scss";
 
-.card-wrapper{
-    padding: 0 24px 10px 24px;
-    border-right: 1px solid $color-decoration;
-    height: 450px;
-    margin-bottom: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card-wrapper {
+  padding: 0 24px 10px 24px;
+  border-right: 1px solid $color-decoration;
+  height: 450px;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    img{
-        width: 100%;
-        height: 204px;
-        object-fit: cover;  
-        margin-bottom: 6%;   
-    }
-    .card-content{
-        display: block;
+  img {
+    width: 100%;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 6%;
+  }
+  .card-content {
+    display: block;
 
-        .card-information{
-            display: block;
-            h3{
-                @include title-news;
-                margin-bottom: 3%;
-            }
-        
-            p{
-                @include text-news;
-            }
-        }
-    }
+    .card-information {
+      display: block;
+      h3 {
+        @include title-news;
+        margin-bottom: 3%;
+      }
 
-
-    .none{
-        opacity: 0;
-    }
-
-    .card-link{
+      p {
         @include text-news;
-        color: $color-decoration;
-        opacity: 1;       
+      }
     }
+  }
 
-        .card-link::after{
-            content: url(../../icons/arrow.svg);
-            margin-left: 3%;
-        }
+  .none {
+    opacity: 0;
+  }
 
+  .card-link {
+    @include text-news;
+    color: $color-decoration;
+    opacity: 1;
+  }
+
+  .card-link::after {
+    content: url(../../icons/arrow.svg);
+    margin-left: 3%;
+  }
 }
 
-
-
-@media screen and (min-width: 2100px){
-    .card-wrapper{
-        height: 520px;
-        img{
-            height: 350px;
-        }
+@media screen and (min-width: 2100px) {
+  .card-wrapper {
+    height: 520px;
+    img {
+      height: 350px;
     }
+  }
 }
 
-
-@media screen and (max-width: 1300px){
-    .card-wrapper{
-        height: 420px;
-        img{
-            height: 130px;
-        }
+@media screen and (max-width: 1300px) {
+  .card-wrapper {
+    height: 420px;
+    img {
+      height: 130px;
     }
+  }
 }
-
-

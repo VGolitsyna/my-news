@@ -1,12 +1,21 @@
-.main-conteiner {
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 2%;
+@import "../../scss/mixins.scss";
+
+.main-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2%;
 }
 
-@media screen and (min-width: 2100px){
-    .main-conteiner {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+@media screen and (min-width: 2100px) {
+  .main-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .main-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
